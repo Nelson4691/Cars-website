@@ -1,0 +1,498 @@
+
+
+/*
+  Fonts:
+  font-family: 'Crete Round', serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  
+  Colors: 
+  #eee
+  #d8a875;
+  rgba(253, 205, 165, 1);
+  
+*/
+/*Global stuff*/
+
+html{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.content-layout-small{
+  max-width: 650px;
+  margin: 0 auto;
+}
+.content-layout-med{
+  max-width: 950px;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.content-layout-large{
+  max-width: 1250px;
+  margin: 0 auto;
+ 
+}
+.left-align{
+  text-align: left;
+}
+
+p, h2{
+   font-family: 'Crete Round', serif;
+  
+}
+p{
+  font-size: 17px;
+}
+
+h1{
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+}
+
+hr{
+  background-color: #eee;
+    border: 0 none;
+    color: #eee;
+    height: 3px;
+  
+}
+h1,h2{
+  text-align: center;
+}
+
+.black-hr{
+  background-color: black;
+    border: 0 none;
+    color: black;
+    height: 3px;
+    width: auto;
+    margin: 0 45px;
+
+}
+
+table{
+  margin: 4em 0em;
+}
+
+nav .text-black a{
+  color: black;
+}
+
+.nav-icon{
+  width: 100px;
+  height:100px;
+}
+/*Page Header*/
+
+.homepage-background-intro{
+  background-image: url(../images/Desert-Large.jpg);
+  background-size: cover;
+  color: #eee;
+}
+
+.page-nav{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  padding: 4px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  background: rgba(112,112,112,0.09)
+  
+}
+ .page-nav a{
+  padding: 10px 10px;
+  margin: 10px 30px;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+  
+}
+
+ header .page-nav a:hover{
+  color: #d8a875;
+}
+
+.page-intro{
+  margin-top: 150px;
+  padding: 20px;
+  
+ 
+  
+}
+
+.page-intro p{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 20px;
+  font-family: 'Shrikhand', cursive;
+  
+}
+
+.display{
+  display:;
+}
+
+.padding{
+ margin: 200px 0px
+}
+
+.carosel-padding{
+  padding-top: 100px;
+}
+/*Cars menu section*/
+
+
+.cars-selection-menu{
+  padding: 20px;
+}
+
+.car{
+  margin-bottom: 50px;
+  background: rgba(253, 205, 165, 0.7);
+}
+
+.car a{
+  text-decoration: none;
+  color: black;
+  text-align: center;
+/*  background: rgba(253, 205, 165, 0.7);*/
+}
+
+.car a p{
+  margin: 20px;
+  text-align: center;
+}
+
+.cars-selection-menu h1{
+  padding-bottom: 150px;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.content-layout-large .car a:hover{
+   background: rgba(253, 205, 165, 1);
+}
+
+
+
+
+img{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+h2{
+  font-size: 2em;
+}
+
+
+
+
+@media screen and (min-width: 850px){
+  
+  .page-nav{
+  justify-content:center;
+}
+  
+  .cars-selection-menu .content-layout-large{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+  
+  }
+  .car{
+    display: flex;
+    flex: 0 0 calc(50% - 8px);
+    
+  }
+  .page-nav a{
+    padding: 15px;
+  }
+  
+  h1{
+    font-size: 3em;
+  }
+  
+  .page-intro p{
+    padding-top: 250px;
+  }
+  
+  .page-intro{
+    padding: 20px;
+  }
+  
+}
+
+@media screen and (min-width: 800px){
+  .cars-selection-menu .content-layout-large{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+  
+  }
+  .car{
+    display: flex;
+    flex: 0 0 calc(33% - 20px);
+    margin-bottom: 10em;
+    
+  }
+  .car-brand{
+    display: flex;
+    flex: 0 0 calc(50% - 20px);
+    margin-bottom: 10em;
+  }
+  
+  .page-nav a{
+  padding: 10px 50px;
+  }
+  
+}
+
+
+@media screen and (min-width:950px){
+  .display{
+    display: none;
+  }
+}
+
+/* Car Layout Page***************************
+****************************************/
+
+.post-content h1{
+  text-transform: uppercase;
+  
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+
+}
+
+.post-content p:first-of-type{
+  padding-top: 50px;
+}
+.post-content p{
+  font-size: 20px;
+  margin-bottom: 50px;
+  
+}
+
+.post-content h2{
+  font-family: 'Permanent Marker', cursive;
+  text-transform: uppercase;
+  
+  
+}
+
+/*sidebar section*/
+.sidebar{
+  font-family: 'Crete Round', serif;
+  padding: .5em 1.4em 1em;
+	background: hsl(0, 0%, 97%);
+  
+}
+
+.sidebar a{
+  text-align: left;
+  display: block;
+  text-decoration: none;
+  color: black;
+/*  padding: 5px;*/
+  padding: .4em 0;
+  
+  font-size: 18px;
+  transition: all 0.5s ease;
+  
+  
+}
+.sidebar a, .sidebar h2{
+  width: 94%;
+  margin: 0 auto;
+}
+
+.sidebar a:hover,
+.sidebar a:focus {
+	padding: .4em 1em;
+	background: hsl(0, 0%, 20%);
+	color: white;
+}
+
+.sidebar h2{
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+.sidebar a:hover{
+  background-color: darkgray;
+ 
+}
+
+@media screen and (min-width:800px){
+  .pag-nav{
+    justify-content:center;
+  }
+  
+}
+
+@media screen and (min-width: 1200px){
+  
+  .sidebar{
+    flex: 0 0 16em;
+  
+  }
+  
+  .post-content{
+    flex: 1 0 auto;
+  
+  }
+  
+}
+
+/*Footer*/
+footer{
+  
+  background-color: rgba(253, 205, 165, 1);
+  color: white;
+  padding: 5em 0em;
+}
+
+.contact-info a{
+  padding: 10px;
+  display: inline-block;
+  color: #eee
+}
+
+.contact-info a:hover{
+  color: #d8a875;
+}
+
+
+/*Farrari Page***************************
+****************************************/
+
+
+.ferrari-background-img{
+  background-image: url(../images/Farrari-logo-mobile.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 300px;
+
+}
+
+
+
+@media screen and (min-width: 690px){
+  .ferrari-background-img{
+    background-image: url(../images/Farrari-logo.jpg);
+    background-size: cover;
+    background-position:bottom;
+  }
+}
+
+
+@media screen and (min-width: 1200px){
+  
+  .ferrari-main-area{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+  }
+  
+  .ferrari-background-img{
+    background-image: url(../images/Farrari-logo-large.jpg);
+    background-size: cover;
+    background-position:top;
+    width: 100%;
+    padding-bottom: 900px
+    
+  }
+}
+
+
+/*Tesla Page***************************
+****************************************/
+
+.tesla-banner{
+    width: 30%;
+  }
+.img-banner-section{
+  text-align: center;
+  padding: 10em 0em
+}
+
+
+/*Land Rover Page***************************
+****************************************/
+
+
+.land-rover-banner{
+    width: 100%
+  }
+
+/*bmw Page***************************
+****************************************/
+
+
+@media screen and (min-width:400px){
+  .bmw-background-img{
+  background-image: url(../images/BMW_Background.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 350px;
+
+  }
+}
+
+@media screen and (min-width:1200px){
+  .bmw-background-img{
+  background-image: url(../images/BMW_Background.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 1000px;
+  }
+}
+/*Porshe Page***************************
+****************************************/ 
+  
+  
+.porshe-background-img{
+  background-image: url(../images/Porsche_banner_mobile.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 300px;
+
+}
+  
+@media screen and (min-width:400px){
+  .porshe-background-img{
+  background-image: url(../images/Porsche_banner_medium_mobile.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 700px;
+  padding-bottom: 700px;
+  }
+}
+
+@media screen and (min-width:1200px){
+  .porshe-background-img{
+  background-image: url(../images/Porsche_Background.jpeg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 1000px;
+  }
+}
+
